@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOOK AT ME</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top left concentration level and break count -->
+  <div id="info-boxes">
+    <div id="concentration-box">A</div>
+    <div id="break-box">
+      <div>Break</div>
+      <div id="break-count">0</div>
+    </div>
+  </div>
+
+  <!-- Timer in the center -->
+  <div id="timer">00:00:00</div>
+
+  <!-- Play/Pause indicator -->
+  <div id="indicator" class="hidden">⏯</div>
+
+  <!-- Toggle Play/Pause text and spacebar -->
+  <div id="toggle-text">
+    <p><span id="spacebar">[Space]</span> to toggle Resume or Pause</p>
+  </div>
+
+  <!-- Font Awesome Reset Button -->
+  <div id="reset-button">
+    <i class="fas fa-redo"></i>
+  </div>
+
+  <!-- 3D Box with GIF and Total Time -->
+  <div id="total-time-box">
+    <img id="emoji-gif" src="sweat.gif" alt="Emoji GIF">
+    <div id="total-time">00:00:00</div>
+  </div>
+
+  <!-- FontAwesome Light/Dark Mode Toggle -->
+  <div id="toggle-mode">
+    <i class="fas fa-toggle-off"></i>
+    <i class="fas fa-toggle-on hidden"></i>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
