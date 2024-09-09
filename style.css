@@ -118,28 +118,29 @@ body {
     cursor: pointer;
 }
 
-/* Keep the toggle styles unchanged */
-#toggle-mode .fa-toggle-on {
-    display: none;
-}
-
 /* Toggle colors for dark and light mode */
-#toggle-mode.light .fa-toggle-on {
-    display: none;
+#toggle-mode .fa-toggle-off {
+    color: #000; /* Black in light mode */
 }
 
-#toggle-mode.dark .fa-toggle-off {
-    display: none;
+#toggle-mode .fa-toggle-on {
+    color: #fff; /* White in dark mode */
 }
 
-#toggle-mode.light .fa-toggle-off {
-    display: inline;
-    color: #000; /* Black toggle color in light mode */
+.dark-mode #toggle-mode .fa-toggle-off {
+    display: none; /* Hide the 'off' toggle in dark mode */
 }
 
-#toggle-mode.dark .fa-toggle-on {
-    display: inline;
-    color: #fff; /* White toggle color in dark mode */
+.light-mode #toggle-mode .fa-toggle-on {
+    display: none; /* Hide the 'on' toggle in light mode */
+}
+
+.dark-mode #toggle-mode .fa-toggle-on {
+    display: inline; /* Show the 'on' toggle in dark mode */
+}
+
+.light-mode #toggle-mode .fa-toggle-off {
+    display: inline; /* Show the 'off' toggle in light mode */
 }
 
 /* Reset button styling */
